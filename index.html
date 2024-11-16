@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h2>Formulário de Cadastro</h2>
+
+    <form action="/submit" method="POST">
+        <!-- Campo Nome -->
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- Campo E-mail -->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Campo Senha -->
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <!-- Seleção de Gênero -->
+        <label for="genero">Gênero:</label><br>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <!-- Checkbox de Termos e Condições -->
+        <label>
+            <input type="checkbox" name="termos" required>
+            Aceito os termos e condições
+        </label><br><br>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
